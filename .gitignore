@@ -1,0 +1,7 @@
+# OpenClaw runtime state (machine-specific)
+.openclaw/
+
+# OS files
+.DS_Store
+Thumbs.db
+

@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    { "type": "rectangle", "id": "solar", "x": 50, "y": 200, "width": 120, "height": 160, "roundness": { "type": 3 }, "backgroundColor": "#fff3bf", "fillStyle": "solid", "boundElements": [{ "id": "t_solar", "type": "text" }] },
+    { "type": "text", "id": "t_solar", "x": 60, "y": 260, "width": 100, "height": 25, "text": "SOLAR PANEL", "fontSize": 16, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle", "containerId": "solar", "originalText": "SOLAR PANEL", "autoResize": true },
+
+    { "type": "diamond", "id": "tvs", "x": 220, "y": 100, "width": 80, "height": 80, "backgroundColor": "#ffc9c9", "fillStyle": "solid", "boundElements": [{ "id": "t_tvs", "type": "text" }] },
+    { "type": "text", "id": "t_tvs", "x": 235, "y": 130, "width": 50, "height": 20, "text": "TVS", "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle", "containerId": "tvs", "originalText": "TVS", "autoResize": true },
+
+    { "type": "ellipse", "id": "cap", "x": 220, "y": 220, "width": 80, "height": 80, "backgroundColor": "#a5d8ff", "fillStyle": "solid", "boundElements": [{ "id": "t_cap", "type": "text" }] },
+    { "type": "text", "id": "t_cap", "x": 230, "y": 245, "width": 60, "height": 30, "text": "2200uF\n35V", "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle", "containerId": "cap", "originalText": "2200uF\n35V", "autoResize": true },
+
+    { "type": "rectangle", "id": "diode", "x": 220, "y": 340, "width": 80, "height": 40, "backgroundColor": "#c3fae8", "fillStyle": "solid", "boundElements": [{ "id": "t_diode", "type": "text" }] },
+    { "type": "text", "id": "t_diode", "x": 225, "y": 350, "width": 70, "height": 20, "text": "1N5822", "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle", "containerId": "diode", "originalText": "1N5822", "autoResize": true },
+
+    { "type": "rectangle", "id": "ina226", "x": 380, "y": 200, "width": 100, "height": 80, "backgroundColor": "#d0bfff", "fillStyle": "solid", "boundElements": [{ "id": "t_ina226", "type": "text" }] },
+    { "type": "text", "id": "t_ina226", "x": 390, "y": 225, "width": 80, "height": 30, "text": "INA226\n(Current)", "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle", "containerId": "ina226", "originalText": "INA226\n(Current)", "autoResize": true },
+
+    { "type": "rectangle", "id": "buck", "x": 550, "y": 200, "width": 120, "height": 80, "backgroundColor": "#ffd8a8", "fillStyle": "solid", "boundElements": [{ "id": "t_buck", "type": "text" }] },
+    { "type": "text", "id": "t_buck", "x": 560, "y": 225, "width": 100, "height": 30, "text": "MP1584EN\n(5V OUT)", "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle", "containerId": "buck", "originalText": "MP1584EN\n(5V OUT)", "autoResize": true },
+
+    { "type": "rectangle", "id": "tp4056", "x": 550, "y": 400, "width": 120, "height": 80, "backgroundColor": "#b2f2bb", "fillStyle": "solid", "boundElements": [{ "id": "t_tp4056", "type": "text" }] },
+    { "type": "text", "id": "t_tp4056", "x": 560, "y": 425, "width": 100, "height": 30, "text": "TP4056\nCharger", "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle", "containerId": "tp4056", "originalText": "TP4056\nCharger", "autoResize": true },
+
+    { "type": "rectangle", "id": "batt", "x": 750, "y": 400, "width": 100, "height": 80, "backgroundColor": "#c3fae8", "fillStyle": "solid", "boundElements": [{ "id": "t_batt", "type": "text" }] },
+    { "type": "text", "id": "t_batt", "x": 760, "y": 425, "width": 80, "height": 30, "text": "18650\nBattery", "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle", "containerId": "batt", "originalText": "18650\nBattery", "autoResize": true },
+
+    { "type": "rectangle", "id": "esp32", "x": 750, "y": 200, "width": 150, "height": 100, "backgroundColor": "#a5d8ff", "fillStyle": "solid", "boundElements": [{ "id": "t_esp32", "type": "text" }] },
+    { "type": "text", "id": "t_esp32", "x": 760, "y": 235, "width": 130, "height": 30, "text": "ESP32 DEVKIT\n(Core)", "fontSize": 16, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle", "containerId": "esp32", "originalText": "ESP32 DEVKIT\n(Core)", "autoResize": true },
+
+    { "type": "rectangle", "id": "opto", "x": 950, "y": 200, "width": 100, "height": 80, "backgroundColor": "#d0bfff", "fillStyle": "solid", "boundElements": [{ "id": "t_opto", "type": "text" }] },
+    { "type": "text", "id": "t_opto", "x": 960, "y": 225, "width": 80, "height": 30, "text": "PC817\nOptocoupler", "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle", "containerId": "opto", "originalText": "PC817\nOptocoupler", "autoResize": true },
+
+    { "type": "rectangle", "id": "ssr", "x": 1100, "y": 200, "width": 120, "height": 80, "backgroundColor": "#ffc9c9", "fillStyle": "solid", "boundElements": [{ "id": "t_ssr", "type": "text" }] },
+    { "type": "text", "id": "t_ssr", "x": 1110, "y": 225, "width": 100, "height": 30, "text": "SSR-25DD\n(Relay)", "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle", "containerId": "ssr", "originalText": "SSR-25DD\n(Relay)", "autoResize": true },
+
+    { "type": "arrow", "id": "a1", "x": 170, "y": 280, "width": 50, "height": 0, "points": [[0,0],[50,0]], "endArrowhead": "arrow" },
+    { "type": "arrow", "id": "a2", "x": 300, "y": 360, "width": 80, "height": -80, "points": [[0,0],[80,-80]], "endArrowhead": "arrow" },
+    { "type": "arrow", "id": "a3", "x": 480, "y": 240, "width": 70, "height": 0, "points": [[0,0],[70,0]], "endArrowhead": "arrow" },
+    { "type": "arrow", "id": "a4", "x": 670, "y": 240, "width": 80, "height": 0, "points": [[0,0],[80,0]], "endArrowhead": "arrow" },
+    { "type": "arrow", "id": "a5", "x": 670, "y": 240, "width": 0, "height": 160, "points": [[0,0],[0,160]], "endArrowhead": "arrow" },
+    { "type": "arrow", "id": "a6", "x": 670, "y": 440, "width": 80, "height": 0, "points": [[0,0],[80,0]], "endArrowhead": "arrow" },
+    { "type": "arrow", "id": "a7", "x": 900, "y": 240, "width": 50, "height": 0, "points": [[0,0],[50,0]], "endArrowhead": "arrow" },
+    { "type": "arrow", "id": "a8", "x": 1050, "y": 240, "width": 50, "height": 0, "points": [[0,0],[50,0]], "endArrowhead": "arrow" }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}
