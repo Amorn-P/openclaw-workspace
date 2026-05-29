@@ -1,0 +1,8 @@
+# OpenClaw internal sessions/runtime
+.openclaw/sessions/
+.openclaw/tasks/
+.openclaw/logs/
+
+# OS
+Thumbs.db
+.DS_Store
