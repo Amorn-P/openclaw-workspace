@@ -1,0 +1,393 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-19T09:27:24.986Z",
+  "entries": {
+    "memory:memory/2026-03-15.md:1:24": {
+      "key": "memory:memory/2026-03-15.md:1:24",
+      "path": "memory/2026-03-15.md",
+      "startLine": 1,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "# 2026-03-15 - Progress Log ## Session Overview - **User:** Papa - **Assistant Persona:** Sherry (Codoggy) - **Primary Project:** Auto_Pump ESP32 Water Control System - **Current Phase:** Phase 1 Refactoring (RS485/Blynk) - **Phase 2 Concept:** Distributed LoRa system (7 slaves + 1 master) using SX1278. ## Key Actions - Initialized Git repository for the project in `E:\\Arduino\\Auto_Pump_07_03_2569_Codoggy_v2`. - Created `config.h` to centralize all hardware pins (RS485, I2C, RTC) and Blynk settings. - Documented Phase 2 design and pinouts in `Phase2_LoRa_Concept/DESIGN_DOCUMENT.md` and `HARDWARE_PHASE_2.md`. - Completed and committed \"Step 2: Configuration Abstraction\" to Git. - Resolved t",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4806089013814926,
+      "maxScore": 0.4806089013814926,
+      "firstRecalledAt": "2026-04-17T15:17:06.258Z",
+      "lastRecalledAt": "2026-04-17T15:17:06.258Z",
+      "queryHashes": [
+        "b0a69b769402"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "auto-pump",
+        "rs485/blynk",
+        "auto-pump-07-03-2569-codoggy-v2",
+        "config.h",
+        "hardware-phase-2.md",
+        "progress",
+        "log",
+        "overview"
+      ]
+    },
+    "memory:memory/2026-03-28.md:10:20": {
+      "key": "memory:memory/2026-03-28.md:10:20",
+      "path": "memory/2026-03-28.md",
+      "startLine": 10,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4676106065511703,
+      "maxScore": 0.4676106065511703,
+      "firstRecalledAt": "2026-04-17T15:17:06.258Z",
+      "lastRecalledAt": "2026-04-17T15:17:06.258Z",
+      "queryHashes": [
+        "b0a69b769402"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": []
+    },
+    "memory:memory/2026-03-28.md:1:12": {
+      "key": "memory:memory/2026-03-28.md:1:12",
+      "path": "memory/2026-03-28.md",
+      "startLine": 1,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "��",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4645851284265518,
+      "maxScore": 0.4645851284265518,
+      "firstRecalledAt": "2026-04-17T15:17:06.258Z",
+      "lastRecalledAt": "2026-04-17T15:17:06.258Z",
+      "queryHashes": [
+        "b0a69b769402"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": []
+    },
+    "memory:memory/2026-03-16.md:1:24": {
+      "key": "memory:memory/2026-03-16.md:1:24",
+      "path": "memory/2026-03-16.md",
+      "startLine": 1,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "# 2026-03-16 - Progress Log ## Session Overview - **User:** Papa - **Assistant Persona:** Sherry - **Primary Project:** Auto_Pump ESP32 Water Control System - **Current Task:** Part 3: Refining Blynk integration and final structural cleanup. ## Tasks for Today - [x] Greet Papa and confirm readiness to resume the Auto_Pump project. - [ ] Continue with Phase 1 Refactoring: Part 3 (Blynk integration refinement). ## Technical Progress & Compilation Fixes - **Build Troubleshooting:** Encountered multiple compilation and linker errors after modularization. - **Header Resolution:** Added missing ESP32 system headers (`esp_task_wdt.h`, `HTTPClient.h`, `Update.h`, `Preferences.h`, `TimeLib.h`)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46399724781513213,
+      "maxScore": 0.46399724781513213,
+      "firstRecalledAt": "2026-04-17T15:17:06.258Z",
+      "lastRecalledAt": "2026-04-17T15:17:06.258Z",
+      "queryHashes": [
+        "b0a69b769402"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "auto-pump",
+        "esp-task-wdt.h",
+        "httpclient.h",
+        "update.h",
+        "preferences.h",
+        "timelib.h",
+        "progress",
+        "log"
+      ]
+    },
+    "memory:memory/2026-04-17.md:25:49": {
+      "key": "memory:memory/2026-04-17.md:25:49",
+      "path": "memory/2026-04-17.md",
+      "startLine": 25,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "4. Each Slave stores these windows in its local **Non-Volatile Memory (Preferences)**. 5. Slaves compare their local **DS3231** time against stored windows to toggle relays. ## Blynk Configuration (Revised) To avoid conflict with existing V10-V14 (Manual/Time Sync), Sherry-Lora will use: ### Period 1 (Morning) - **V53**: Start Time (Time Input) - **V54**: Duration per relay (Minutes) - **V55**: Total Sequence Display (Label) ### Period 2 (Evening) - **V56**: Start Time (Time Input) - **V57**: Duration per relay (Minutes) - **V58**: Total Sequence Display (Label) ### General Control - **V59**: Sync to Slaves Button (Manual Trigger) - **V60**: Slave Connectivity Status (Label/Indicator) #",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4715231209993362,
+      "maxScore": 0.4715231209993362,
+      "firstRecalledAt": "2026-04-28T16:47:48.357Z",
+      "lastRecalledAt": "2026-04-28T16:47:48.357Z",
+      "queryHashes": [
+        "bbf7a40aaec2"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "non-volatile",
+        "v10-v14",
+        "manual/time",
+        "sherry-lora",
+        "label/indicator",
+        "each",
+        "slave",
+        "stores"
+      ]
+    },
+    "memory:memory/2026-04-17.md:1:32": {
+      "key": "memory:memory/2026-04-17.md:1:32",
+      "path": "memory/2026-04-17.md",
+      "startLine": 1,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "# 2026-04-17 - Sherry-Lora Decentralized Logic ## Project Context - **Project:** Sherry-Lora (LoRa Water Pump Control) - **Architecture:** 1 Gateway (Blynk + LoRa Master), 7 Slaves (LoRa + Independent RTC). - **Core Problem:** High risk of communication failure during multi-hour runs. - **Hardware Sync:** All slaves are equipped with **DS3231 RTC** modules for high precision. ## Decisions & Logic (Papa's \"Staggered Overlap\" Proposal) - **Goal:** Minimize LoRa traffic while ensuring all nodes sync correctly and operate autonomously. - **Overlap Logic:** 1-minute overlap between sequential relays (similar to SherryOne). - **Example Calculation (09:30 Start, 5 min Duration):** - **B2 (Mai",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4702356249094009,
+      "maxScore": 0.4702356249094009,
+      "firstRecalledAt": "2026-04-28T16:47:48.357Z",
+      "lastRecalledAt": "2026-04-28T16:47:48.357Z",
+      "queryHashes": [
+        "bbf7a40aaec2"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "gateway",
+        "sherry-lora",
+        "multi-hour",
+        "1-minute",
+        "sherry",
+        "lora",
+        "decentralized",
+        "logic"
+      ]
+    },
+    "memory:memory/2026-04-19.md:1:23": {
+      "key": "memory:memory/2026-04-19.md:1:23",
+      "path": "memory/2026-04-19.md",
+      "startLine": 1,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "# 2026-04-19 - Lucky_Lora Progress ## Today's Achievements - **Hardware Validation:** Fixed ESP32 GPIO 12 strapping issue on the hardware test project. - **Relay Logic:** Refactored code for Active-Low relay modules using `#define RELAY_ON LOW`. - **Project Switch:** Transitioned to `Lucky_Lora` project. - **Blynk Setup:** Updated `Blynk_tab.txt` with new Virtual Pins V101-V104 for Period 1 & 2 (Start Times/Durations). - **LoRa Protocol:** Expanded `LuckyPacket` in `Protocol_Lora.h` to include schedule data and `SetSchedule` command. - **Comm Test:** Implemented a robust Ping-Pong test in `main.cpp` using RadioLib to monitor RSSI/SNR for distance testing. ## Current State - Master (ID 7) b",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4736311256885528,
+      "maxScore": 0.4736311256885528,
+      "firstRecalledAt": "2026-05-03T02:56:40.374Z",
+      "lastRecalledAt": "2026-05-03T02:56:40.374Z",
+      "queryHashes": [
+        "255fed6ebe88"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "lucky-lora",
+        "active-low",
+        "relay-on",
+        "blynk-tab.txt",
+        "v101-v104",
+        "times/durations",
+        "protocol-lora.h",
+        "ping-pong"
+      ]
+    },
+    "memory:memory/2026-04-17.md:25:48": {
+      "key": "memory:memory/2026-04-17.md:25:48",
+      "path": "memory/2026-04-17.md",
+      "startLine": 25,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "4. Each Slave stores these windows in its local **Non-Volatile Memory (Preferences)**. 5. Slaves compare their local **DS3231** time against stored windows to toggle relays. ## Blynk Configuration (Revised) To avoid conflict with existing V10-V14 (Manual/Time Sync), Sherry-Lora will use: ### Period 1 (Morning) - **V53**: Start Time (Time Input) - **V54**: Duration per relay (Minutes) - **V55**: Total Sequence Display (Label) ### Period 2 (Evening) - **V56**: Start Time (Time Input) - **V57**: Duration per relay (Minutes) - **V58**: Total Sequence Display (Label) ### General Control - **V59**: Sync to Slaves Button (Manual Trigger) - **V60**: Slave Connectivity Status (Label/Indicator) #",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4725253343582153,
+      "maxScore": 0.4725253343582153,
+      "firstRecalledAt": "2026-05-03T02:56:40.374Z",
+      "lastRecalledAt": "2026-05-03T02:56:40.374Z",
+      "queryHashes": [
+        "255fed6ebe88"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "non-volatile",
+        "v10-v14",
+        "manual/time",
+        "sherry-lora",
+        "label/indicator",
+        "each",
+        "slave",
+        "stores"
+      ]
+    },
+    "memory:memory/2026-05-06.md:1:6": {
+      "key": "memory:memory/2026-05-06.md:1:6",
+      "path": "memory/2026-05-06.md",
+      "startLine": 1,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "# 2026-05-06 - Session started. - Greeted Papa. - Checking in on the Google Drive organization project (awaiting OAuth). - Ready for ESP32 engineering or any other tasks.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4598572164773941,
+      "maxScore": 0.4598572164773941,
+      "firstRecalledAt": "2026-05-07T10:44:46.673Z",
+      "lastRecalledAt": "2026-05-07T10:44:46.673Z",
+      "queryHashes": [
+        "7adb74fec563"
+      ],
+      "recallDays": [
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "started",
+        "greeted",
+        "papa",
+        "checking",
+        "google",
+        "drive",
+        "organization",
+        "project"
+      ]
+    },
+    "memory:memory/2026-04-29.md:1:19": {
+      "key": "memory:memory/2026-04-29.md:1:19",
+      "path": "memory/2026-04-29.md",
+      "startLine": 1,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "# 2026-04-29 Session Summary ## Accomplishments - **System Maintenance**: Resolved \"Gateway restart update error\" using `openclaw doctor --fix`. - **System Pruning**: Manually cleaned up 7 stale subagent sessions from `sessions.json`. - **Centralization**: Established `C:\\Users\\SKY\\Documents\\Teams\\` as the central hub for all project workflows. - **Team Management**: Created `TEAM_MASTER.md` to manage multiple specialized teams (Team A: ESP32, Team B: Pocket Book). - **SherryOne (Team A)**: Updated web server UI (`21_Wf.h`) to English. - **Pocket Book (Team B)**: Drafted three versions of a short story (\"The Sad Dog and the Giant Pork Deal\") in Thai, incorporating specific themes (sexy dres",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9061078757047653,
+      "maxScore": 0.47677282392978665,
+      "firstRecalledAt": "2026-05-07T10:44:46.673Z",
+      "lastRecalledAt": "2026-05-16T06:28:38.282Z",
+      "queryHashes": [
+        "7adb74fec563",
+        "041c44d4f0d3"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "gateway",
+        "sessions.json",
+        "team-master.md",
+        "21-wf.h",
+        "summary",
+        "accomplishments",
+        "maintenance",
+        "resolved"
+      ]
+    },
+    "memory:memory/2026-05-06.md:1:11": {
+      "key": "memory:memory/2026-05-06.md:1:11",
+      "path": "memory/2026-05-06.md",
+      "startLine": 1,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "# 2026-05-06 - Session started. - Greeted Papa. - Resolved duplicate message issue: - Updated OpenClaw to 2026.5.4. - Updated PowerShell execution policy to RemoteSigned. - Restarted Gateway. - Checking in on the Google Drive organization project (awaiting OAuth). - Ready for ESP32 engineering or any other tasks. - Papa expressed satisfaction with the system performance and responsiveness after the update.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47176465690135955,
+      "maxScore": 0.47176465690135955,
+      "firstRecalledAt": "2026-05-07T10:47:56.830Z",
+      "lastRecalledAt": "2026-05-07T10:47:56.830Z",
+      "queryHashes": [
+        "4445236dfae2"
+      ],
+      "recallDays": [
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "gateway",
+        "2026.5.4",
+        "started",
+        "greeted",
+        "papa",
+        "resolved",
+        "duplicate",
+        "message"
+      ]
+    },
+    "memory:memory/ESP32_Lora/2026-04-17.md:25:48": {
+      "key": "memory:memory/ESP32_Lora/2026-04-17.md:25:48",
+      "path": "memory/ESP32_Lora/2026-04-17.md",
+      "startLine": 25,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "4. Each Slave stores these windows in its local **Non-Volatile Memory (Preferences)**. 5. Slaves compare their local **DS3231** time against stored windows to toggle relays. ## Blynk Configuration (Revised) To avoid conflict with existing V10-V14 (Manual/Time Sync), Sherry-Lora will use: ### Period 1 (Morning) - **V53**: Start Time (Time Input) - **V54**: Duration per relay (Minutes) - **V55**: Total Sequence Display (Label) ### Period 2 (Evening) - **V56**: Start Time (Time Input) - **V57**: Duration per relay (Minutes) - **V58**: Total Sequence Display (Label) ### General Control - **V59**: Sync to Slaves Button (Manual Trigger) - **V60**: Slave Connectivity Status (Label/Indicator) #",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.43911108076572414,
+      "maxScore": 0.43911108076572414,
+      "firstRecalledAt": "2026-05-16T12:32:07.341Z",
+      "lastRecalledAt": "2026-05-16T12:32:07.341Z",
+      "queryHashes": [
+        "718a70ae8438"
+      ],
+      "recallDays": [
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "non-volatile",
+        "v10-v14",
+        "manual/time",
+        "sherry-lora",
+        "label/indicator",
+        "each",
+        "slave",
+        "stores"
+      ]
+    },
+    "memory:memory/2026-05-18.md:1:43": {
+      "key": "memory:memory/2026-05-18.md:1:43",
+      "path": "memory/2026-05-18.md",
+      "startLine": 1,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "# 2026-05-18 — CherryTwo Phase 2 Build Session ## Session Summary Full-day session building CherryTwo ESP32 industrial relay controller. Started with broken Phase 1 connectivity, ended with Phase 2 compiled + uploaded. ## Final Status ### Working ✅ - WiFi: `Gilbert_2.4G` · RSSI -29 dBm · IP 192.168.1.47 - AP: `CherryTwo_Config` @ 192.168.4.1 (always on, WIFI_AP_STA) - Internet: Adaptive check (FAST→NORMAL→SLOW) - Telegram: Bot `-4641052312` — online + Blynk notifications OK - Blynk: Legacy v0.6.1 · Server 43.229.135.169:8080 · Token 32 chars - RTC: DS1302, synced from NTP (asia.pool.ntp.org) - FreeRTOS: 4 tasks running (Scheduler/Relay/Status/Watchdog) - Serial debug: Status every ~11s wi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-19T09:27:24.986Z",
+      "lastRecalledAt": "2026-05-19T09:27:24.986Z",
+      "queryHashes": [
+        "7ef63d06a50d"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "full-day",
+        "gilbert-2.4g",
+        "192.168.1.47",
+        "cherrytwo-config",
+        "192.168.4.1",
+        "wifi-ap-sta",
+        "v0.6.1",
+        "43.229.135.169"
+      ]
+    }
+  }
+}
